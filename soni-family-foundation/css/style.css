@@ -1,1 +1,201 @@
+/* style.css */
 
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fdf6ec;
+  color: #351f1b;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: #351f1b;
+  margin-bottom: 0.5em;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fdf6ec;
+}
+
+nav .logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #351f1b;
+  font-weight: 500;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #fdf6ec;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Intro Card */
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: #e8b4b8;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+}
+
+.card .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1.25rem;
+  background-color: #883c3a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+/* Highlight Section */
+.highlight {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #e8b4b8;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fdf6ec;
+  font-size: 0.9rem;
+}
+
+/* About Page */
+.about-story {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-story h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.team {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.member img {
+  border-radius: 10px;
+}
+
+/* Projects Page */
+.pillar-section {
+  padding: 4rem 2rem;
+}
+
+.pillar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.pillar img {
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.pillar div {
+  flex: 1;
+  min-width: 250px;
+}
+
+.pillar h2 {
+  margin-bottom: 1rem;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #351f1b;
+  margin: 2rem 0;
+}
+
+/* Donate Page */
+.donate-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.donate-box {
+  background-color: #e8b4b8;
+  padding: 3rem;
+  max-width: 700px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.donate-box h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.donate-box p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
