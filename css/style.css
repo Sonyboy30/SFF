@@ -1,125 +1,182 @@
-/* Reset and Base Styles */
-body {
-  margin: 0;
-  font-family: 'Georgia', serif;
-  background-color: #fdf7ec;
-  color: #2c1b18;
-}
-
-h1, h2, h3, h4, h5, h6, p {
+/* Global Styles */
+body, html {
   margin: 0;
   padding: 0;
+  font-family: 'Georgia', serif;
+  background-color: #fef7ed;
+  color: #2c2c2c;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #fef7ed;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #a0845c;
 }
 
 /* Hero Section */
 .hero {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-image: url('welcome.jpg');
+  position: relative;
+  height: 80vh;
   background-size: cover;
   background-position: center;
-  height: 500px;
-  color: #2c1b18;
-  padding: 60px;
+  display: flex;
+  align-items: center;
 }
 
-.hero-left {
-  width: 40%;
-  font-size: 2.5rem;
-  font-weight: bold;
+.hero-overlay {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  width: 100%;
+  color: #2c2c2c;
 }
 
-.hero-right {
-  width: 50%;
-  background-color: rgba(253, 247, 236, 0.8);
-  padding: 20px;
-  border-radius: 8px;
+.hero-text-left {
+  flex: 1;
+  align-self: center;
+}
+
+.hero-text-left h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  color: #2c2c2c;
+}
+
+.hero-text-right {
+  flex: 1.2;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.hero-text-right h2 {
+  font-size: 1.75rem;
+  margin-bottom: 10px;
+}
+
+.hero-text-right p {
   font-size: 1rem;
   line-height: 1.6;
 }
 
-/* Unlock + Empower Section */
-.unlock-empower {
+/* Split Section */
+.split-section {
   display: flex;
-  flex-direction: row;
-  height: 600px;
-  margin-top: 0;
+  height: 90vh;
 }
 
-.unlock {
-  width: 50%;
-  background-image: url('unlock.jpg');
+.split-left {
+  flex: 1;
   background-size: cover;
   background-position: center;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px;
 }
 
-.unlock h2 {
-  font-size: 3rem;
-  color: #421c1c;
-  background-color: rgba(253, 247, 236, 0.7);
-  padding: 10px 20px;
-  border-radius: 6px;
+.overlay-text {
+  color: #3c1c1c;
+  font-size: 2.8rem;
+  text-align: center;
+  padding: 30px;
+  font-family: 'Georgia', serif;
 }
 
-.empower {
-  width: 50%;
+.split-right {
+  flex: 1;
+  background-color: #fef7ed;
+  padding: 50px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px;
-  background-color: #fdf7ec;
-  gap: 30px;
 }
 
-.empower img {
-  width: 200px;
-  height: auto;
+.logo-img {
+  width: 60%;
+  max-width: 300px;
+  margin-bottom: 30px;
 }
 
-.empower .card {
-  background-color: #eeb6b2;
-  padding: 20px;
+.info-box {
+  background-color: #efbfbf;
+  padding: 25px 30px;
   border-radius: 10px;
-  max-width: 400px;
   text-align: left;
-  font-size: 0.95rem;
-  line-height: 1.5;
+  max-width: 400px;
 }
 
-.empower .card h3 {
+.info-box h3 {
+  margin-top: 0;
   font-size: 1.3rem;
-  margin-bottom: 10px;
 }
 
-.empower .card button {
+.info-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.learn-more-btn {
+  display: inline-block;
   margin-top: 15px;
-  background-color: #7c3b3b;
+  background-color: #a0845c;
   color: white;
-  border: none;
   padding: 10px 20px;
   border-radius: 5px;
-  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
-@media (max-width: 768px) {
-  .hero {
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-overlay {
     flex-direction: column;
     text-align: center;
-    height: auto;
-    padding: 30px;
+    padding: 40px 20px;
   }
-  .hero-left, .hero-right, .unlock, .empower {
+
+  .hero-text-left, .hero-text-right {
     width: 100%;
   }
-  .unlock-empower {
+
+  .split-section {
     flex-direction: column;
     height: auto;
+  }
+
+  .split-left, .split-right {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .logo-img {
+    width: 50%;
   }
 }
