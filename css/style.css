@@ -1,202 +1,125 @@
-/* ===== RESET & GLOBALS ===== */
-* {
+/* Reset and Base Styles */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #fdf7ec;
+  color: #2c1b18;
+}
+
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Georgia', serif;
-  scroll-behavior: smooth;
 }
 
-body {
-  background-color: #fdf6eb;
-  color: #3b1d1d;
-  line-height: 1.6;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-  border-radius: 8px;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-/* ===== NAVBAR ===== */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #fdf6eb;
-  border-bottom: 1px solid #ccc;
-}
-
-.navbar .logo {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-}
-
-.nav-links li a {
-  font-size: 1rem;
-}
-
-/* ===== HERO ===== */
+/* Hero Section */
 .hero {
-  position: relative;
-  height: 90vh;
-  background: url("../assets/unlock.jpg") center/cover no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #2e0505;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  background-color: rgba(253, 246, 235, 0.7);
-  padding: 1rem 2rem;
-  border-radius: 12px;
-}
-
-/* ===== HOME BLOCK WITH LOGO ===== */
-.empower-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  padding: 3rem 2rem;
-  background-color: #e6cfc7;
-}
-
-.empower-section img.logo-icon {
-  max-width: 150px;
-  height: auto;
-}
-
-.empower-section .text-block {
-  max-width: 600px;
-}
-
-.empower-section .text-block h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.empower-section .text-block a.button {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #893f45;
-  color: #fff;
-  border-radius: 6px;
-}
-
-/* ===== PROJECTS ===== */
-.projects-hero img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  margin-bottom: 2rem;
-}
-
-.pillar-section {
-  padding: 3rem 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-}
-
-.pillar {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 2rem;
+  justify-content: space-between;
+  background-image: url('welcome.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  color: #2c1b18;
+  padding: 60px;
 }
 
-.pillar:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-.pillar img {
+.hero-left {
   width: 40%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
-.pillar-text {
-  max-width: 55%;
+.hero-right {
+  width: 50%;
+  background-color: rgba(253, 247, 236, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
-.pillar-text h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #3b1d1d;
-}
-
-/* ===== DONATE ===== */
-.donate-section,
-.support-work {
-  padding: 4rem 2rem;
-  background-color: #e6b4ac;
-  text-align: center;
-}
-
-.donate-section h2,
-.support-work h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-}
-
-.donate-section p,
-.support-work p {
-  max-width: 750px;
-  margin: 0 auto 1rem;
-}
-
-.donate-pillars {
-  background-color: #fdf6eb;
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.donate-pillars h3 {
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
-}
-
-.donate-pillars .grid {
+/* Unlock + Empower Section */
+.unlock-empower {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 2rem;
-  margin-bottom: 3rem;
+  flex-direction: row;
+  height: 600px;
+  margin-top: 0;
 }
 
-.donate-pillars .grid div {
-  flex: 1 1 250px;
-  max-width: 300px;
+.unlock {
+  width: 50%;
+  background-image: url('unlock.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
 }
 
-.donate-pillars .donate-now h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+.unlock h2 {
+  font-size: 3rem;
+  color: #421c1c;
+  background-color: rgba(253, 247, 236, 0.7);
+  padding: 10px 20px;
+  border-radius: 6px;
 }
 
-/* ===== FOOTER (Optional) ===== */
-footer {
-  padding: 2rem;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #777;
+.empower {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #fdf7ec;
+  gap: 30px;
+}
+
+.empower img {
+  width: 200px;
+  height: auto;
+}
+
+.empower .card {
+  background-color: #eeb6b2;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+  text-align: left;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.empower .card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.empower .card button {
+  margin-top: 15px;
+  background-color: #7c3b3b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 30px;
+  }
+  .hero-left, .hero-right, .unlock, .empower {
+    width: 100%;
+  }
+  .unlock-empower {
+    flex-direction: column;
+    height: auto;
+  }
 }
