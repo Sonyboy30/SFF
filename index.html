@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Soni Family Foundation</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Soni Family Foundation (SFF)</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <header>
-    <nav class="navbar">
-      <div class="logo">Soni Family<br>Foundation (SFF)</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Welcome</a></li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="events.html">Event Details</a></li>
-        <li><a href="donate.html">Donate</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="navbar">
+    <div class="logo">Soni Family Foundation (SFF)</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="events.html">Event Details</a></li>
+      <li><a href="donate.html">Donate</a></li>
+    </ul>
+  </nav>
 
   <!-- Hero Section -->
-  <section class="hero-section">
-    <div class="hero-image">
-      <img src="welcome.jpg" alt="Child studying">
+  <section class="hero" style="background-image: url('welcome.jpg');">
+    <div class="hero-overlay">
       <div class="hero-text-left">
         <h1>Welcome<br>to Our Site</h1>
       </div>
@@ -38,25 +33,26 @@
     </div>
   </section>
 
-  <!-- Empowering Geniuses Section -->
+  <!-- Split Section -->
   <section class="split-section">
-    <div class="split-left">
-      <img src="unlock.jpg" alt="Smiling student" />
-      <div class="split-text">
-        <h2>Empowering<br>Geniuses</h2>
+    <!-- Left Side: Kid -->
+    <div class="split-left" style="background-image: url('unlock.jpg');">
+      <div class="overlay-text">
+        <h1>Empowering<br>Geniuses</h1>
       </div>
     </div>
+
+    <!-- Right Side: Logo and Info -->
     <div class="split-right">
-      <img src="empower.jpg" alt="Soni Family Foundation Logo" class="logo-img" />
-      <div class="split-card">
+      <img src="empower.jpg" alt="SFF Logo" class="logo-img" />
+      <div class="info-box">
         <h3>Unlocking Brighter Futures</h3>
         <p>
           At the Soni Family Foundation, we believe every child has the ability to become a genius. We’re investing in under-resourced schools and nonprofits in South and West Dallas by funding after-school programs, mentorship, and hands-on learning experiences.
         </p>
-        <a href="about.html" class="btn">Learn More</a>
+        <a href="about.html" class="learn-more-btn">Learn More</a>
       </div>
     </div>
   </section>
-
 </body>
 </html>
