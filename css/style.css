@@ -44,44 +44,142 @@ body {
 }
 
 /* ==== HERO SECTION ==== */
-.hero {
+.hero-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+}
+
+.hero-left h1 {
+  font-size: 3rem;
+}
+
+.hero-right {
+  max-width: 600px;
+}
+
+.hero-img img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+/* ==== FEATURE BLOCK ==== */
+.feature-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 3rem 2rem;
+  gap: 2rem;
+}
+
+.feature-image img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.feature-text {
+  max-width: 500px;
+}
+
+.feature-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.learn-more-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #7b3d3d;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* ==== FOOTER ==== */
+.footer {
+  background-color: #fdf7ed;
+  padding: 3rem 2rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-left,
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-left h2 {
+  margin-bottom: 1rem;
+}
+
+.social-icons img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.footer-right input,
+.footer-right label {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.footer-right input[type="text"],
+.footer-right input[type="email"] {
+  padding: 0.5rem;
+  border: 1px solid #3b2b2b;
+}
+
+.footer-right .checkbox-wrapper {
+  margin: 1rem 0;
+}
+
+.footer-right button {
+  padding: 0.6rem 1.5rem;
+  background-color: #7b3d3d;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* ==== ABOUT PAGE ==== */
+.about-hero {
   text-align: center;
   padding: 3rem 1rem;
 }
 
-.hero h1 {
+.about-hero h1 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
 
-.hero img {
+.about-hero img {
   max-width: 90%;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* ==== PILLARS SECTION (HOME + PROJECTS) ==== */
-.pillars {
-  padding: 3rem 1rem;
-  text-align: center;
-}
-
-.pillars h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.pillars ul {
-  list-style: none;
-  font-size: 1.1rem;
-}
-
-.pillars ul li {
-  margin: 0.5rem 0;
-}
-
-/* ==== STORY SECTION ==== */
 .story {
   padding: 3rem 1rem;
   max-width: 800px;
@@ -94,7 +192,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-/* ==== TEAM SECTION ==== */
+/* ==== TEAM ==== */
 .team {
   padding: 3rem 1rem;
   text-align: center;
@@ -129,89 +227,79 @@ body {
   font-size: 0.95rem;
 }
 
-/* ==== PROJECTS PAGE (PILLAR SECTIONS) ==== */
-.pillar-section {
-  padding: 3rem 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-
-.pillar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 2rem;
-}
-
-.pillar:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-.pillar img {
-  width: 40%;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.pillar-text {
-  max-width: 60%;
-}
-
-.pillar-text h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.8rem;
-}
-
 /* ==== DONATE PAGE ==== */
-.donate-message {
-  padding: 3rem 1rem;
+.support-block {
+  background-color: #eab7b7;
+  padding: 3rem 2rem;
   text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
+  font-size: 1.05rem;
 }
 
-.donate-message h2 {
+.support-block h2 {
   font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #3b2b2b;
+}
+
+.support-block p {
+  margin-bottom: 1rem;
+  color: #3b2b2b;
+}
+
+.impact-section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.impact-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.impact-grid {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.impact-grid div {
+  max-width: 250px;
+}
+
+.impact-grid h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.donate-now {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.donate-now h1 {
+  font-size: 3rem;
   margin-bottom: 1rem;
 }
 
-.donate-message p {
-  font-size: 1.05rem;
-  margin: 0.6rem 0;
-  color: #444;
-}
-
-/* ==== TEAM PREVIEW LINK ==== */
-.team-link {
-  text-align: center;
-  margin: 2rem 0;
-}
-
-.team-link a {
-  text-decoration: none;
-  color: #3b2b2b;
-  font-weight: bold;
+.donate-now p {
   font-size: 1.1rem;
-}
-
-.team-link a:hover {
-  text-decoration: underline;
 }
 
 /* ==== RESPONSIVE ==== */
 @media (max-width: 768px) {
-  .pillar {
+  .hero-banner, .feature-block {
     flex-direction: column;
+    text-align: center;
   }
 
-  .pillar:nth-child(even) {
+  .impact-grid {
     flex-direction: column;
+    align-items: center;
   }
 
-  .pillar img,
-  .pillar-text {
-    width: 100%;
-    max-width: 100%;
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
   }
 }
