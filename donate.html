@@ -3,57 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Donate – Soni Family Foundation</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Donate | Soni Family Foundation</title>
+  <meta name="description" content="Support the Soni Family Foundation with your donation." />
+  <style>
+    body { font-family: 'Georgia', serif; background: #faf6ef; color: #2c1a1d; }
+    header { background: #faf1dd; border-bottom: 1px solid #ecd9b0; }
+    .main-nav { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 1.5rem 2rem; }
+    .nav-brand { font-size: 1.3rem; font-weight: bold; color: #603e15; }
+    .nav-right { list-style: none; display: flex; gap: 2.2rem; }
+    .nav-right li a { text-decoration: none; color: #2c1a1d; font-weight: bold; font-size: 1.15rem; transition: color 0.2s; padding-bottom: 2px; border-bottom: 2px solid transparent; }
+    .nav-right li a:hover { color: #b89b62; border-bottom: 2px solid #b89b62; }
+    .donate-section { max-width: 600px; margin: 5rem auto 4rem auto; background: #fff9ef; border-radius: 20px; box-shadow: 0 8px 30px rgba(180,155,98,0.09); padding: 3rem 2.2rem 2.3rem 2.2rem; text-align: center; }
+    .donate-section h1 { font-size: 2.3rem; color: #855515; margin-bottom: 1.2rem; }
+    .donate-section p { font-size: 1.18rem; margin-bottom: 2.4rem; color: #3d2e1b; }
+    .donate-section .button {
+      background: #47bb65; color: #fff; border: none; border-radius: 8px; font-size: 1.17rem;
+      padding: 1rem 2.4rem; font-weight: bold; cursor: pointer; text-decoration: none; transition: background 0.23s;
+      box-shadow: 0 2px 10px rgba(71,187,101,0.14);
+      display: inline-block;
+    }
+    .donate-section .button:hover { background: #268944; color: #fff; }
+    .impact-section { margin-top: 3rem; }
+    .impact-section h2 { font-size: 1.4rem; color: #8c6830; margin-bottom: 1.3rem; }
+    .impact-grid { display: flex; gap: 1.2rem; flex-wrap: wrap; justify-content: center; }
+    .impact-grid > div { background: #f6f0e3; border-radius: 12px; padding: 1.3rem 1rem; min-width: 200px; flex: 1; max-width: 280px; box-shadow: 0 2px 12px rgba(180,155,98,0.07);}
+    .impact-grid h3 { font-size: 1.1rem; color: #895721; margin-bottom: 0.6rem; }
+    .impact-grid p { font-size: 1rem; color: #433422; }
+    @media (max-width: 700px) {
+      .main-nav { flex-direction: column; gap: 0.6rem; }
+      .donate-section { padding: 2rem 0.7rem; }
+      .impact-grid { flex-direction: column; gap: 1.1rem; }
+      .donate-section h1 { font-size: 1.3rem; }
+      .donate-section p, .impact-section h2 { font-size: 1rem; }
+    }
+  </style>
 </head>
 <body>
-
-  <!-- NAVIGATION -->
   <header>
-    <nav class="navbar">
-      <div class="logo">Soni Family Foundation (SFF)</div>
-      <ul class="nav-links">
+    <nav class="main-nav">
+      <span class="nav-brand">Soni Family Foundation</span>
+      <ul class="nav-right">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="donate.html">Donate</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- SUPPORT BLOCK -->
-  <section class="support-block">
-    <h2>Support Our Work</h2>
-    <p>Your generosity fuels real change. Whether it’s helping a school launch an after-school STEM program or equipping a nonprofit with mentoring resources, every dollar makes a difference.</p>
-    <p>We’re currently building our pilot programs in South and West Dallas, and your support helps us get there faster.</p>
-    <p>🔽 All donations will be tax-deductible once our 501(c)(3) approval is finalized.<br>
-       💌 For donation questions, email: <a href="mailto:sonifamilyfoundation@gmail.com">sonifamilyfoundation@gmail.com</a></p>
-  </section>
-
-  <!-- WHAT YOUR SUPPORT MAKES POSSIBLE -->
-  <section class="impact-section">
-    <h2>What Your Support Makes Possible</h2>
-    <div class="impact-grid">
-      <div>
-        <h3>Microgrants for Schools</h3>
-        <p>Help Title I campuses start after-school clubs, tutoring, or summer prep.</p>
-      </div>
-      <div>
-        <h3>Student-Centered Programs</h3>
-        <p>From robotics to reading, we support programs that make learning exciting.</p>
-      </div>
-      <div>
-        <h3>Community Partnerships</h3>
-        <p>We collaborate with nonprofits doing vital work in education equity.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- DONATE NOW MESSAGE -->
-  <section class="donate-now">
-    <h1>Donate Now</h1>
-    <p>We are <strong>NOT</strong> currently accepting donations; they open twice a year. If you would like to make a donation, please complete the form when it becomes available.</p>
-  </section>
-
-</body>
-</html>
