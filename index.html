@@ -137,112 +137,108 @@
     }
     /* Contact Section Styles */
     .contact-section {
-      padding: 4rem 2rem 3rem 2rem;
+      padding: 3rem 1rem 2rem 1rem;
       background: #faf6ef;
       border-top: 1px solid #f2e7ce;
     }
     .contact-section h2 {
-      font-size: 2.3rem;
-      color: #855515;
-      margin-bottom: 2rem;
-      letter-spacing: 1px;
+      font-size: 1.7rem;
+      color: #8c6830;
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.5px;
+      font-weight: 700;
       text-align: center;
     }
-    .contact-cards {
+    .contact-grid {
       display: flex;
-      flex-wrap: wrap;
       gap: 2rem;
       justify-content: center;
-      align-items: stretch;
+      align-items: flex-start;
       max-width: 900px;
       margin: 0 auto;
+      flex-wrap: wrap;
+    }
+    .contact-socials {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      min-width: 180px;
+      align-items: flex-start;
     }
     .contact-card {
       background: #fff9ef;
-      border-radius: 14px;
-      box-shadow: 0 2px 16px rgba(180,155,98,0.13);
-      padding: 2.2rem 1.7rem 1.4rem 1.7rem;
-      min-width: 200px;
-      max-width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 1px 7px rgba(180,155,98,0.09);
+      padding: 0.7rem 1.1rem;
       display: flex;
-      flex-direction: column;
       align-items: center;
-      transition: box-shadow 0.2s, background 0.2s, transform 0.15s;
+      gap: 0.9rem;
+      font-size: 1rem;
+      transition: box-shadow 0.18s, background 0.18s;
     }
     .contact-card:hover {
       background: #fbe0b2;
-      box-shadow: 0 8px 30px rgba(180,155,98,0.19);
-      transform: translateY(-3px) scale(1.03);
+      box-shadow: 0 6px 20px rgba(180,155,98,0.14);
     }
-    .contact-icon {
-      font-size: 2.6rem;
-      margin-bottom: 0.6rem;
-    }
-    .contact-title {
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: #895721;
-      margin-bottom: 0.45rem;
-    }
-    .contact-desc {
-      font-size: 1.06rem;
-      margin-bottom: 0.7rem;
-      color: #483b28;
+    .contact-logo {
+      width: 27px;
+      height: 27px;
+      margin-right: 0.15rem;
+      vertical-align: middle;
+      display: inline-block;
     }
     .contact-link {
       color: #8c4c8a;
-      font-weight: bold;
+      font-weight: 600;
       text-decoration: none;
-      font-size: 1.04rem;
-      transition: color 0.2s;
-      word-break: break-all;
+      transition: color 0.18s;
     }
     .contact-link:hover {
       color: #603e15;
       text-decoration: underline;
     }
-    /* Direct Contact Card */
-    .direct-contact {
-      margin: 3.5rem auto 0 auto;
-      max-width: 350px;
+    .contact-info-card {
       background: #fff9ef;
-      border-radius: 14px;
-      box-shadow: 0 2px 16px rgba(140,104,48,0.08);
-      padding: 2rem 1.4rem;
-      text-align: left;
-      font-size: 1.11rem;
+      border-radius: 10px;
+      box-shadow: 0 1px 7px rgba(180,155,98,0.09);
+      padding: 1.3rem 1.2rem;
+      font-size: 1rem;
+      min-width: 200px;
+      max-width: 250px;
+      margin-top: 0.5rem;
     }
-    .contact-row {
-      margin-bottom: 1.1rem;
+    .info-row {
+      margin-bottom: 1rem;
       display: flex;
       flex-direction: column;
-    }
-    .contact-label {
-      color: #8c6830;
-      font-weight: bold;
-      margin-bottom: 0.18rem;
-    }
-    .contact-value {
-      color: #2c1a1d;
-      font-size: 1.12rem;
       word-break: break-word;
     }
-    .direct-contact a.contact-value {
+    .info-label {
+      color: #8c6830;
+      font-weight: 700;
+      margin-bottom: 0.08rem;
+    }
+    .contact-info-card a {
       color: #8c4c8a;
       text-decoration: none;
     }
-    .direct-contact a.contact-value:hover {
+    .contact-info-card a:hover {
       text-decoration: underline;
       color: #603e15;
-    }
-    /* Responsive design */
-    @media (max-width: 950px) {
-      .contact-cards { flex-direction: column; gap: 1.2rem; align-items: center; }
     }
     @media (max-width: 900px) {
       .main-nav { flex-direction: column; gap: 0.6rem; }
       .empower-row { flex-direction: column; }
       .empower-image, .empower-content { max-width: 90vw; }
+    }
+    @media (max-width: 700px) {
+      .contact-grid {
+        flex-direction: column;
+        gap: 1.1rem;
+        align-items: center;
+      }
+      .contact-info-card { max-width: 90vw; }
+      .contact-socials { align-items: center; }
     }
     @media (max-width: 650px) {
       .hero-text { padding: 1.3rem 0.7rem; }
@@ -284,54 +280,39 @@
   </section>
 
   <section class="contact-section">
-    <h2>Connect with Us</h2>
-    <div class="contact-cards">
-      <div class="contact-card">
-        <span class="contact-icon">📺</span>
-        <div class="contact-title">YouTube</div>
-        <div class="contact-desc">Watch our latest events and updates.</div>
-        <a href="https://www.youtube.com/@SoniFamilyFoundation" class="contact-link" target="_blank">youtube.com/@SoniFamilyFoundation</a>
+    <h2>Contact Us</h2>
+    <div class="contact-grid">
+      <div class="contact-socials">
+        <div class="contact-card">
+          <img src="assets/Youtube.png" alt="YouTube Logo" class="contact-logo" />
+          <a href="https://www.youtube.com/@SoniFamilyFoundation" class="contact-link" target="_blank">YouTube</a>
+        </div>
+        <div class="contact-card">
+          <img src="assets/Instagram.png" alt="Instagram Logo" class="contact-logo" />
+          <a href="https://www.instagram.com/sonifamilyfoundation" class="contact-link" target="_blank">Instagram</a>
+        </div>
+        <div class="contact-card">
+          <img src="assets/X.png" alt="X Logo" class="contact-logo" />
+          <a href="https://x.com/sonifamfndn" class="contact-link" target="_blank">X (Twitter)</a>
+        </div>
+        <div class="contact-card">
+          <img src="assets/LinkedIn.png" alt="LinkedIn Logo" class="contact-logo" />
+          <a href="https://www.linkedin.com/company/soni-family-foundation" class="contact-link" target="_blank">LinkedIn</a>
+        </div>
+        <div class="contact-card">
+          <img src="assets/Linktree.png" alt="Linktree Logo" class="contact-logo" />
+          <a href="https://linktr.ee/SoniFamilyFoundation" class="contact-link" target="_blank">Linktree</a>
+        </div>
       </div>
-      <div class="contact-card">
-        <span class="contact-icon">📸</span>
-        <div class="contact-title">Instagram</div>
-        <div class="contact-desc">See our programs in action & daily stories.</div>
-        <a href="https://www.instagram.com/sonifamilyfoundation" class="contact-link" target="_blank">@sonifamilyfoundation</a>
-      </div>
-      <div class="contact-card">
-        <span class="contact-icon">🐦</span>
-        <div class="contact-title">X (Twitter)</div>
-        <div class="contact-desc">Get quick news & real-time updates.</div>
-        <a href="https://x.com/sonifamfndn" class="contact-link" target="_blank">@sonifamfndn</a>
-      </div>
-      <div class="contact-card">
-        <span class="contact-icon">💼</span>
-        <div class="contact-title">LinkedIn</div>
-        <div class="contact-desc">Connect professionally with our team.</div>
-        <a href="https://www.linkedin.com/company/soni-family-foundation" class="contact-link" target="_blank">Soni Family Foundation</a>
-      </div>
-      <div class="contact-card">
-        <span class="contact-icon">🔗</span>
-        <div class="contact-title">Linktree</div>
-        <div class="contact-desc">All our links in one place.</div>
-        <a href="https://linktr.ee/SoniFamilyFoundation" class="contact-link" target="_blank">linktr.ee/SoniFamilyFoundation</a>
-      </div>
-    </div>
-    <div class="direct-contact">
-      <div class="contact-row">
-        <span class="contact-label">Phone:</span>
-        <span class="contact-value">857-361-9601</span>
-      </div>
-      <div class="contact-row">
-        <span class="contact-label">Email:</span>
-        <a href="mailto:sonifamilyfoundation@gmail.com" class="contact-value">SoniFamilyFoundation@gmail.com</a>
-      </div>
-      <div class="contact-row">
-        <span class="contact-label">Address:</span>
-        <span class="contact-value">
-          4833 Walnut Hill Ln<br>
-          Dallas, TX 75229
-        </span>
+      <div class="contact-info-card">
+        <div class="info-row"><span class="info-label">Phone:</span> 857-361-9601</div>
+        <div class="info-row"><span class="info-label">Email:</span> <a href="mailto:sonifamilyfoundation@gmail.com">SoniFamilyFoundation@gmail.com</a></div>
+        <div class="info-row"><span class="info-label">Address:</span>
+          <div>
+            4833 Walnut Hill Ln<br>
+            Dallas, TX 75229
+          </div>
+        </div>
       </div>
     </div>
   </section>
