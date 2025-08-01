@@ -13,7 +13,21 @@
     .nav-right { list-style: none; display: flex; gap: 2.2rem; }
     .nav-right li a { text-decoration: none; color: #2c1a1d; font-weight: bold; font-size: 1.15rem; transition: color 0.2s; padding-bottom: 2px; border-bottom: 2px solid transparent; }
     .nav-right li a:hover { color: #b89b62; border-bottom: 2px solid #b89b62; }
-    .projects-section { max-width: 1000px; margin: 4rem auto 3rem auto; display: flex; flex-direction: column; gap: 3.5rem; }
+    /* Hero Image */
+    .projects-hero {
+      width: 100%;
+      max-width: 1100px;
+      margin: 3rem auto 2rem auto;
+      text-align: center;
+    }
+    .projects-hero img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 20px;
+      box-shadow: 0 6px 28px rgba(140,104,48,0.10);
+    }
+    /* Projects section */
+    .projects-section { max-width: 1000px; margin: 3rem auto 3rem auto; display: flex; flex-direction: column; gap: 3.5rem; }
     .project-block { display: flex; align-items: center; background: #fff9ef; border-radius: 18px; box-shadow: 0 2px 14px rgba(180,155,98,0.10); padding: 2.2rem 1.5rem; gap: 2.2rem; }
     .project-block img { width: 150px; border-radius: 12px; box-shadow: 0 2px 10px rgba(140,104,48,0.08); }
     .project-content { flex: 1; }
@@ -24,6 +38,8 @@
       .project-block { flex-direction: column; gap: 1rem; text-align: center; }
       .projects-section { gap: 1.4rem; }
       .project-block img { margin: 0 auto; }
+      .projects-hero { margin: 1.5rem auto 1rem auto; }
+      .projects-hero img { max-width: 98vw; }
     }
   </style>
 </head>
@@ -39,6 +55,13 @@
       </ul>
     </nav>
   </header>
+
+  <!-- PROJECTS HERO IMAGE -->
+  <section class="projects-hero">
+    <img src="assets/projects-hero.jpg" alt="Projects Header Image" />
+  </section>
+
+  <!-- PROJECTS -->
   <section class="projects-section">
     <div class="project-block">
       <img src="assets/pillar1.jpg" alt="Challenging the Norms of Learning">
