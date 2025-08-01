@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Soni Family Foundation</title>
   <meta name="description" content="Soni Family Foundation is unlocking opportunity in Dallas through education, microgrants, and mentorship." />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/SFF-logo.png" />
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -25,10 +27,22 @@
       justify-content: space-between;
       padding: 1.5rem 2rem;
     }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      text-decoration: none;
+    }
+    .nav-logo img {
+      height: 42px;
+      width: auto;
+      border-radius: 7px;
+      box-shadow: 0 2px 8px rgba(140,104,48,0.10);
+    }
     .nav-brand {
-      font-size: 1.3rem;
-      font-weight: bold;
       color: #603e15;
+      font-size: 1.25rem;
+      font-weight: bold;
       letter-spacing: 1px;
     }
     .nav-right {
@@ -251,7 +265,10 @@
 <body>
   <header>
     <nav class="main-nav">
-      <span class="nav-brand">Soni Family Foundation</span>
+      <a href="index.html" class="nav-logo">
+        <img src="assets/SFF-logo.png" alt="Soni Family Foundation Logo" />
+        <span class="nav-brand">Soni Family Foundation</span>
+      </a>
       <ul class="nav-right">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
