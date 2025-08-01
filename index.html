@@ -26,18 +26,10 @@
       padding: 1.5rem 2rem;
     }
     .nav-brand {
-      display: flex;
-      align-items: center;
       font-size: 1.3rem;
       font-weight: bold;
       color: #603e15;
       letter-spacing: 1px;
-    }
-    .nav-brand img {
-      height: 44px;
-      margin-right: 1rem;
-      vertical-align: middle;
-      border-radius: 12px;
     }
     .nav-right {
       list-style: none;
@@ -57,6 +49,7 @@
       color: #b89b62;
       border-bottom: 2px solid #b89b62;
     }
+    /* Hero Section */
     .hero {
       min-height: 68vh;
       background: url('assets/welcome.jpg') center center/cover no-repeat;
@@ -89,6 +82,7 @@
       color: #ffe9bd;
       font-weight: 500;
     }
+    /* Empowering Geniuses Row */
     .empower-row {
       display: flex;
       flex-wrap: wrap;
@@ -141,7 +135,6 @@
       color: #fff;
       box-shadow: 0 4px 16px rgba(180,155,98,0.15);
     }
-
     /* Contact Section Styles */
     .contact-section {
       padding: 4rem 2rem 3rem 2rem;
@@ -153,6 +146,7 @@
       color: #855515;
       margin-bottom: 2rem;
       letter-spacing: 1px;
+      text-align: center;
     }
     .contact-cards {
       display: flex;
@@ -207,7 +201,40 @@
       color: #603e15;
       text-decoration: underline;
     }
-
+    /* Direct Contact Card */
+    .direct-contact {
+      margin: 3.5rem auto 0 auto;
+      max-width: 350px;
+      background: #fff9ef;
+      border-radius: 14px;
+      box-shadow: 0 2px 16px rgba(140,104,48,0.08);
+      padding: 2rem 1.4rem;
+      text-align: left;
+      font-size: 1.11rem;
+    }
+    .contact-row {
+      margin-bottom: 1.1rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .contact-label {
+      color: #8c6830;
+      font-weight: bold;
+      margin-bottom: 0.18rem;
+    }
+    .contact-value {
+      color: #2c1a1d;
+      font-size: 1.12rem;
+      word-break: break-word;
+    }
+    .direct-contact a.contact-value {
+      color: #8c4c8a;
+      text-decoration: none;
+    }
+    .direct-contact a.contact-value:hover {
+      text-decoration: underline;
+      color: #603e15;
+    }
     /* Responsive design */
     @media (max-width: 950px) {
       .contact-cards { flex-direction: column; gap: 1.2rem; align-items: center; }
@@ -228,10 +255,7 @@
 <body>
   <header>
     <nav class="main-nav">
-      <span class="nav-brand">
-        <!-- <img src="assets/logo.png" alt="SFF Logo" /> Uncomment if you have a logo! -->
-        Soni Family Foundation
-      </span>
+      <span class="nav-brand">Soni Family Foundation</span>
       <ul class="nav-right">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
@@ -291,6 +315,23 @@
         <div class="contact-title">Linktree</div>
         <div class="contact-desc">All our links in one place.</div>
         <a href="https://linktr.ee/SoniFamilyFoundation" class="contact-link" target="_blank">linktr.ee/SoniFamilyFoundation</a>
+      </div>
+    </div>
+    <div class="direct-contact">
+      <div class="contact-row">
+        <span class="contact-label">Phone:</span>
+        <span class="contact-value">857-361-9601</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Email:</span>
+        <a href="mailto:sonifamilyfoundation@gmail.com" class="contact-value">SoniFamilyFoundation@gmail.com</a>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Address:</span>
+        <span class="contact-value">
+          4833 Walnut Hill Ln<br>
+          Dallas, TX 75229
+        </span>
       </div>
     </div>
   </section>
