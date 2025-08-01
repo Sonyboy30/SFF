@@ -12,29 +12,32 @@ body {
 }
 
 /* NAVIGATION BAR */
+header {
+  background-color: #faf1dd;
+  padding: 1rem 0;
+}
+
 .main-nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #faf1dd;
-  font-weight: bold;
-  font-size: 1.1rem;
 }
 
-.main-nav ul {
+.nav-right {
   list-style: none;
   display: flex;
   gap: 2rem;
 }
 
-.main-nav ul li a {
+.nav-right li a {
   text-decoration: none;
   color: #2c1a1d;
+  font-weight: bold;
+  font-size: 1.1rem;
   transition: color 0.3s;
 }
 
-.main-nav ul li a:hover {
+.nav-right li a:hover {
   color: #8c4c8a;
 }
 
@@ -81,7 +84,7 @@ body {
 
 .empower-image {
   flex: 1;
-  max-width: 500px;
+  max-width: 400px;
 }
 
 .empower-image img {
@@ -97,7 +100,7 @@ body {
 }
 
 .empower-content h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
 }
 
@@ -243,4 +246,4 @@ body {
   .project-block {
     flex-direction: column;
   }
-} 
+}
