@@ -2,103 +2,201 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F3YEBWJLWB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F3YEBWJLWB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-F3YEBWJLWB');
+  </script>
 
-  gtag('config', 'G-F3YEBWJLWB');
-</script>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects | Soni Family Foundation</title>
-  <meta name="description" content="Explore the educational and wellness projects run by the Soni Family Foundation." />
+  <meta name="description" content="Explore the Soni Family Foundation’s pillars: Learning, Wellness, and R&D—how we fund after-school programs, mentorship, and evidence-based pilots in Dallas." />
+  <link rel="canonical" href="https://www.sonifoundation.org/projects.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/sff-logo.png" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.sonifoundation.org/projects.html" />
+  <meta property="og:site_name" content="Soni Family Foundation" />
+  <meta property="og:title" content="Projects | Soni Family Foundation" />
+  <meta property="og:description" content="See our pillars and current focus areas across Dallas schools and nonprofits." />
+  <meta property="og:image" content="https://www.sonifoundation.org/assets/sff-logo.png" />
+  <meta property="og:image:alt" content="Soni Family Foundation Logo" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Projects | Soni Family Foundation" />
+  <meta name="twitter:description" content="See our pillars and current focus areas across Dallas schools and nonprofits." />
+  <meta name="twitter:image" content="https://www.sonifoundation.org/assets/sff-logo.png" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Soni Family Foundation",
+    "url": "https://www.sonifoundation.org/",
+    "logo": "https://www.sonifoundation.org/assets/sff-logo.png"
+  }
+  </script>
+
   <style>
-    body { font-family: 'Georgia', serif; background: #faf6ef; color: #2c1a1d; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Georgia', serif; background: #faf6ef; color: #2c1a1d; line-height: 1.6; }
+    a:focus-visible, button:focus-visible { outline: 2px solid #8c6830; outline-offset: 2px; }
+
     header { background: #faf1dd; border-bottom: 1px solid #ecd9b0; }
     .main-nav { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 1.5rem 2rem; }
-    .nav-brand { font-size: 1.3rem; font-weight: bold; color: #603e15; }
+    .nav-logo { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
+    .nav-logo img { height: 60px; width: 60px; border-radius: 7px; box-shadow: 0 2px 8px rgba(140,104,48,0.10); }
+    .nav-brand { font-size: 1.25rem; font-weight: bold; color: #603e15; letter-spacing: 1px; }
     .nav-right { list-style: none; display: flex; gap: 2.2rem; }
     .nav-right li a { text-decoration: none; color: #2c1a1d; font-weight: bold; font-size: 1.15rem; transition: color 0.2s; padding-bottom: 2px; border-bottom: 2px solid transparent; }
-    .nav-right li a:hover { color: #b89b62; border-bottom: 2px solid #b89b62; }
-    /* Hero Image */
-    .projects-hero {
-      width: 100%;
-      max-width: 1100px;
-      margin: 3rem auto 2rem auto;
-      text-align: center;
-    }
-    .projects-hero img {
-      width: 100%;
-      max-width: 800px;
-      border-radius: 20px;
-      box-shadow: 0 6px 28px rgba(140,104,48,0.10);
-    }
-    /* Projects section */
-    .projects-section { max-width: 1000px; margin: 3rem auto 3rem auto; display: flex; flex-direction: column; gap: 3.5rem; }
-    .project-block { display: flex; align-items: center; background: #fff9ef; border-radius: 18px; box-shadow: 0 2px 14px rgba(180,155,98,0.10); padding: 2.2rem 1.5rem; gap: 2.2rem; }
-    .project-block img { width: 150px; border-radius: 12px; box-shadow: 0 2px 10px rgba(140,104,48,0.08); }
+    .nav-right li a:hover, .nav-right li a[aria-current="page"] { color: #b89b62; border-bottom: 2px solid #b89b62; }
+
+    .page-hero { text-align: center; margin: 2.5rem auto 1rem; padding: 0 1rem; max-width: 1100px; }
+    .page-hero h1 { font-size: 2.1rem; color: #8c6830; margin-bottom: 1.2rem; }
+    .projects-hero { width: 100%; max-width: 1100px; margin: 0 auto 2rem; text-align: center; }
+    .projects-hero img { width: 100%; max-width: 800px; height: auto; border-radius: 20px; box-shadow: 0 6px 28px rgba(140,104,48,0.10); }
+
+    .impact-strip { max-width: 1000px; margin: 0 auto 2rem; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.9rem; padding: 0 1rem; }
+    .impact-card { background: #fff9ef; border: 1px solid #ecd9b0; border-radius: 14px; padding: 1rem; text-align: center; box-shadow: 0 2px 10px rgba(180,155,98,0.08); }
+    .impact-card .num { font-size: 1.6rem; font-weight: 700; color: #895721; }
+    .impact-card .label { font-size: 0.98rem; color: #604d31; }
+
+    .projects-section { max-width: 1000px; margin: 2rem auto 3rem; display: flex; flex-direction: column; gap: 2rem; padding: 0 1rem; }
+    .project-block { display: flex; align-items: center; background: #fff9ef; border-radius: 18px; box-shadow: 0 2px 14px rgba(180,155,98,0.10); padding: 1.6rem; gap: 1.6rem; }
+    .project-block img { width: 160px; height: 120px; object-fit: cover; border-radius: 12px; box-shadow: 0 2px 10px rgba(140,104,48,0.08); }
     .project-content { flex: 1; }
-    .project-content h3 { font-size: 1.4rem; color: #8c6830; margin-bottom: 0.6rem; }
-    .project-content p { font-size: 1.12rem; color: #433422; }
-    @media (max-width: 800px) {
+    .project-content h2 { font-size: 1.5rem; color: #8c6830; margin-bottom: 0.4rem; }
+    .project-content p { font-size: 1.07rem; color: #433422; }
+
+    .cta-row { display: flex; gap: 0.75rem; margin-top: 0.6rem; flex-wrap: wrap; }
+    .btn { text-decoration: none; padding: 0.8rem 1.2rem; background: #8c6830; color: #fff; border-radius: 6px; font-weight: 700; font-size: 1rem; transition: background 0.23s, box-shadow 0.23s; box-shadow: 0 2px 10px rgba(180,155,98,0.08); }
+    .btn:hover { background: #b89b62; box-shadow: 0 4px 16px rgba(180,155,98,0.15); }
+
+    footer { border-top: 1px solid #ecd9b0; background: #faf1dd; padding: 1rem 2rem; text-align: center; font-size: 0.95rem; color: #433422; }
+
+    @media (max-width: 900px) {
       .main-nav { flex-direction: column; gap: 0.6rem; }
-      .project-block { flex-direction: column; gap: 1rem; text-align: center; }
-      .projects-section { gap: 1.4rem; }
-      .project-block img { margin: 0 auto; }
-      .projects-hero { margin: 1.5rem auto 1rem auto; }
+      .impact-strip { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 700px) {
+      .project-block { flex-direction: column; text-align: center; }
       .projects-hero img { max-width: 98vw; }
+      .impact-strip { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
+  <a href="#main" class="sr-only" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+
   <header>
-    <nav class="main-nav">
-      <span class="nav-brand">Soni Family Foundation</span>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html" class="nav-logo" aria-label="Soni Family Foundation home">
+        <img src="assets/sff-logo.png" alt="Soni Family Foundation Logo" width="60" height="60" decoding="async" fetchpriority="high" />
+        <span class="nav-brand">Soni Family Foundation</span>
+      </a>
       <ul class="nav-right">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
         <li><a href="donate.html">Donate</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- PROJECTS HERO IMAGE -->
-  <section class="projects-hero">
-    <img src="assets/projects-hero.jpg" alt="Projects Header Image" />
-  </section>
+  <main id="main">
+    <div class="page-hero">
+      <h1>Our Projects & Pillars</h1>
+    </div>
 
-  <!-- PROJECTS -->
-  <section class="projects-section">
-    <div class="project-block">
-      <img src="assets/pillar1.jpg" alt="Challenging the Norms of Learning">
-      <div class="project-content">
-        <h3>01<br>Challenging the Norms of Learning</h3>
-        <p>
-          At the heart of our mission is a simple belief: education should never be a privilege; it should be a pathway open to everyone. Whether it’s mentoring students, designing accessible learning spaces, or championing growth mindsets, we’re working to tear down the silent walls that keep knowledge gated. We focus on community-based learning, evidence-driven teaching, and making knowledge stick — not just for today, but for a lifetime. From one-on-one learning moments to wide-reaching programs, our goal is to ensure that every curious mind has the tools, the support, and the confidence to thrive. This isn’t about checklists. It’s about changing how people feel about learning, seeing, hearing, and being more capable.
-        </p>
+    <!-- HERO IMAGE -->
+    <section class="projects-hero" aria-label="Projects banner">
+      <img src="assets/projects-hero.jpg" alt="Students collaborating during an after-school session" loading="lazy" decoding="async" width="800" height="480" />
+    </section>
+
+    <!-- IMPACT STRIP (edit numbers as you have them) -->
+    <section class="impact-strip" aria-label="Impact metrics">
+      <div class="impact-card">
+        <div class="num" id="students-served">—</div>
+        <div class="label">Students Supported</div>
       </div>
-    </div>
-    <div class="project-block">
-      <img src="assets/pillar2.jpg" alt="Redefining What It Means to Be Well">
-      <div class="project-content">
-        <h3>02<br>Redefining What It Means to Be Well</h3>
-        <p>
-          At SFF, we see student wellness as the foundation for everything else. Health isn’t just about doctor visits or gym class—it’s about emotional safety, mental clarity, and a sense of being cared for. We’re exploring how to build environments where students feel nourished, inside and out. We believe that when a child feels safe, seen, and steady, learning becomes possible.
-        </p>
+      <div class="impact-card">
+        <div class="num" id="grants-given">—</div>
+        <div class="label">Microgrants Awarded</div>
       </div>
-    </div>
-    <div class="project-block">
-      <img src="assets/pillar3.jpg" alt="Rethinking How Progress Is Made">
-      <div class="project-content">
-        <h3>03<br>Rethinking How Progress Is Made</h3>
-        <p>
-          We’re early in this pillar, but the vision is clear. Our R&D isn’t about labs or test tubes. It’s about listening, prototyping, and learning in real time with the communities we serve. From experimenting with new tutoring formats to gathering feedback on what works in classrooms, we’re committed to building a culture of evidence-based action. We don’t want to assume what’s needed, we want to discover it, together. In this space, every idea is a draft, and every draft is a step toward impact.
-        </p>
+      <div class="impact-card">
+        <div class="num" id="partners">—</div>
+        <div class="label">School & Nonprofit Partners</div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects-section" aria-label="Project pillars">
+      <article class="project-block">
+        <img src="assets/pillar1.jpg" alt="Tutor and student in a small-group learning session" loading="lazy" decoding="async" width="160" height="120">
+        <div class="project-content">
+          <h2>1) Challenging the Norms of Learning</h2>
+          <p>
+            Education shouldn’t be a privilege. We fund and co-design programs that make learning stick—mentorship, accessible spaces, and evidence-driven teaching that turn curiosity into capability.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="donate.html">Fund a Program</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-block">
+        <img src="assets/pillar2.jpg" alt="Students participating in a wellness and mindfulness activity" loading="lazy" decoding="async" width="160" height="120">
+        <div class="project-content">
+          <h2>2) Redefining What It Means to Be Well</h2>
+          <p>
+            Wellness starts with safety, belonging, and steady routines. We support initiatives that build emotional resilience, mental clarity, and a sense of being cared for—so learning can thrive.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="donate.html">Support Student Wellness</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-block">
+        <img src="assets/pillar3.jpg" alt="Whiteboard with sticky notes from a community co-design session" loading="lazy" decoding="async" width="160" height="120">
+        <div class="project-content">
+          <h2>3) Rethinking How Progress Is Made</h2>
+          <p>
+            Our R&D is community-based: listen, prototype, measure, iterate. We pilot new tutoring formats and classroom supports, then scale what the data—and students—say works.
+          </p>
+          <div class="cta-row">
+            <a class="btn" href="donate.html">Back a Pilot</a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Soni Family Foundation · Dallas, TX · 501(c)(3) status: pending
+  </footer>
+
+  <script>
+    // Auto-update year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // (Optional) Quick placeholders for metrics—update these with real numbers or remove this block.
+    const metrics = {
+      students: null,   // e.g., 150
+      grants: null,     // e.g., 12
+      partners: null    // e.g., 7
+    };
+    if (metrics.students) document.getElementById('students-served').textContent = metrics.students.toLocaleString();
+    if (metrics.grants) document.getElementById('grants-given').textContent = metrics.grants.toLocaleString();
+    if (metrics.partners) document.getElementById('partners').textContent = metrics.partners.toLocaleString();
+  </script>
 </body>
 </html>
