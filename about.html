@@ -2,110 +2,166 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F3YEBWJLWB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F3YEBWJLWB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-F3YEBWJLWB');
+  </script>
 
-  gtag('config', 'G-F3YEBWJLWB');
-</script>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About Us | Soni Family Foundation</title>
-  <meta name="description" content="Learn about the mission and story behind the Soni Family Foundation." />
+  <meta name="description" content="Learn about the mission, story, and team behind the Soni Family Foundation." />
+  <link rel="canonical" href="https://www.sonifoundation.org/about.html" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/sff-logo.png" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.sonifoundation.org/about.html" />
+  <meta property="og:site_name" content="Soni Family Foundation" />
+  <meta property="og:title" content="About Us | Soni Family Foundation" />
+  <meta property="og:description" content="Learn about the mission, story, and team behind the Soni Family Foundation." />
+  <meta property="og:image" content="https://www.sonifoundation.org/assets/sff-logo.png" />
+  <meta property="og:image:alt" content="Soni Family Foundation Logo" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Us | Soni Family Foundation" />
+  <meta name="twitter:description" content="Learn about the mission, story, and team behind the Soni Family Foundation." />
+  <meta name="twitter:image" content="https://www.sonifoundation.org/assets/sff-logo.png" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Soni Family Foundation",
+    "url": "https://www.sonifoundation.org/",
+    "logo": "https://www.sonifoundation.org/assets/sff-logo.png",
+    "sameAs": [
+      "https://www.youtube.com/@SoniFamilyFoundation",
+      "https://www.instagram.com/sonifamilyfoundation",
+      "https://x.com/sonifamfndn",
+      "https://www.linkedin.com/company/soni-family-foundation",
+      "https://linktr.ee/SoniFamilyFoundation"
+    ]
+  }
+  </script>
+
   <style>
-    body { font-family: 'Georgia', serif; background: #faf6ef; color: #2c1a1d; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Georgia', serif; background: #faf6ef; color: #2c1a1d; line-height: 1.6; }
+    a:focus-visible, button:focus-visible { outline: 2px solid #8c6830; outline-offset: 2px; }
+
     header { background: #faf1dd; border-bottom: 1px solid #ecd9b0; }
     .main-nav { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 1.5rem 2rem; }
-    .nav-brand { font-size: 1.3rem; font-weight: bold; color: #603e15; }
+    .nav-logo { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
+    .nav-logo img { height: 60px; width: 60px; border-radius: 7px; box-shadow: 0 2px 8px rgba(140,104,48,0.10); }
+    .nav-brand { font-size: 1.25rem; font-weight: bold; color: #603e15; letter-spacing: 1px; }
     .nav-right { list-style: none; display: flex; gap: 2.2rem; }
     .nav-right li a { text-decoration: none; color: #2c1a1d; font-weight: bold; font-size: 1.15rem; transition: color 0.2s; padding-bottom: 2px; border-bottom: 2px solid transparent; }
-    .nav-right li a:hover { color: #b89b62; border-bottom: 2px solid #b89b62; }
-    .about-hero { text-align: center; margin-top: 3rem; }
+    .nav-right li a:hover, .nav-right li a[aria-current="page"] { color: #b89b62; border-bottom: 2px solid #b89b62; }
+
+    .about-hero { text-align: center; margin: 3rem auto 2rem; padding: 0 1rem; max-width: 1100px; }
     .about-hero h1 { font-size: 2.2rem; color: #8c6830; margin-bottom: 1.2rem; }
-    .about-hero img { width: 700px; border-radius: 18px; box-shadow: 0 2px 16px rgba(140,104,48,0.14); margin-bottom: 2.5rem; }
-    .about-section { max-width: 900px; margin: 0 auto 3rem auto; background: #fff9ef; border-radius: 20px; box-shadow: 0 8px 30px rgba(180,155,98,0.08); padding: 3rem 2.2rem 2rem 2.2rem; }
-    .about-section h2 { font-size: 1.4rem; color: #b89b62; margin-bottom: 0.8rem; margin-top: 2.2rem; }
-    .about-section p { font-size: 1.17rem; margin-bottom: 1.4rem; color: #3d2e1b; }
-    .team { margin: 4rem auto; max-width: 1000px; text-align: center; }
-    .team h2 { color: #8c6830; margin-bottom: 2.1rem; font-size: 1.5rem; }
+    .about-hero img { width: 100%; max-width: 700px; height: auto; border-radius: 18px; box-shadow: 0 2px 16px rgba(140,104,48,0.14); margin: 0 auto 2.5rem auto; display: block; }
+
+    .about-section { max-width: 900px; margin: 0 auto 3rem; background: #fff9ef; border-radius: 20px; box-shadow: 0 8px 30px rgba(180,155,98,0.08); padding: 3rem 2.2rem 2rem; }
+    .about-section h2 { font-size: 1.6rem; color: #b89b62; margin-bottom: 0.8rem; }
+    .about-section p { font-size: 1.17rem; margin-bottom: 1.1rem; color: #3d2e1b; }
+
+    .team { margin: 4rem auto; max-width: 1000px; text-align: center; padding: 0 1rem; }
+    .team h2 { color: #8c6830; margin-bottom: 2.1rem; font-size: 1.6rem; }
     .team-grid { display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; }
-    .member { background: #fff9ef; border-radius: 14px; box-shadow: 0 2px 14px rgba(180,155,98,0.09); padding: 1.6rem 1.3rem; min-width: 160px; max-width: 180px; }
-    .member img { width: 120px; height: 120px; object-fit: cover; border-radius: 50%; margin-bottom: 1rem; }
-    .member h3 { margin-bottom: 0.3rem; font-size: 1.1rem; color: #895721; }
-    .member p { font-size: 1rem; color: #604d31; }
-    @media (max-width: 700px) {
+    .member { background: #fff9ef; border-radius: 14px; box-shadow: 0 2px 14px rgba(180,155,98,0.09); padding: 1.6rem 1.3rem; min-width: 180px; max-width: 220px; }
+    .member img { width: 120px; height: 120px; object-fit: cover; border-radius: 50%; margin-bottom: 0.8rem; }
+    .member h3 { margin-bottom: 0.2rem; font-size: 1.1rem; color: #895721; }
+    .member p { font-size: 0.98rem; color: #604d31; }
+
+    footer { border-top: 1px solid #ecd9b0; background: #faf1dd; padding: 1rem 2rem; text-align: center; font-size: 0.95rem; color: #433422; }
+
+    @media (max-width: 900px) {
       .main-nav { flex-direction: column; gap: 0.6rem; }
-      .about-section, .about-hero { padding: 2rem 0.7rem; }
-      .about-hero img { width: 130px; }
-      .team-grid { flex-direction: column; align-items: center; }
-      .about-hero h1 { font-size: 1.3rem; }
+    }
+    @media (max-width: 700px) {
+      .about-section { padding: 2rem 1rem; }
+      .about-hero h1 { font-size: 1.6rem; }
     }
   </style>
 </head>
 <body>
+  <a href="#main" class="sr-only" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+
   <header>
-    <nav class="main-nav">
-      <span class="nav-brand">Soni Family Foundation</span>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html" class="nav-logo" aria-label="Soni Family Foundation home">
+        <img src="assets/sff-logo.png" alt="Soni Family Foundation Logo" width="60" height="60" decoding="async" fetchpriority="high" />
+        <span class="nav-brand">Soni Family Foundation</span>
+      </a>
       <ul class="nav-right">
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
+        <li><a href="about.html" aria-current="page">About Us</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="donate.html">Donate</a></li>
       </ul>
     </nav>
   </header>
-  <section class="about-hero">
-    <h1>DOING WHAT WE CAN TO HELP<br>OUR COMMUNITY</h1>
-    <img src="assets/hope.jpg" alt="Hope written in sand" />
-  </section>
-  <section class="about-section">
-    <h2>Our Story</h2>
-    <p>The Soni Family Foundation (SFF) is a Dallas-based nonprofit committed to closing opportunity gaps in education — one school, one program, one student at a time.</p>
-    <p>Founded by the Soni family with deep roots in service and equity, SFF partners directly with Title I public schools and local nonprofits in South and West Dallas to deliver impactful microgrants, after-school programs, and mentorship opportunities that improve educational outcomes for underserved students.</p>
-    <p>We believe that the future of Dallas depends on how we support the kids who need it most today. We envision a Dallas where zip code doesn’t determine opportunity, and every student has access to the tools, relationships, and experiences that unlock their full potential.</p>
-  </section>
-  <section class="team">
-    <h2>Meet The Team</h2>
-    <div class="team-grid">
-      <div class="member">
-        <img src="assets/paramjeet.jpg" alt="Paramjeet Soni" />
-        <h3>Paramjeet Soni</h3>
-        <p>Co-CEO/President</p>
+
+  <main id="main">
+    <section class="about-hero">
+      <h1>Doing What We Can To Help Our Community</h1>
+      <img src="assets/hope.jpg" alt="The word 'Hope' written in sand at the shoreline" loading="lazy" decoding="async" width="700" height="467" />
+    </section>
+
+    <section class="about-section" aria-labelledby="our-story">
+      <h2 id="our-story">Our Story</h2>
+      <p>The Soni Family Foundation (SFF) is a Dallas-based nonprofit committed to closing opportunity gaps in education — one school, one program, one student at a time.</p>
+      <p>Founded by the Soni family with deep roots in service and equity, SFF partners directly with Title I public schools and local nonprofits in South and West Dallas to deliver impactful microgrants, after-school programs, and mentorship opportunities that improve educational outcomes for underserved students.</p>
+      <p>We believe that the future of Dallas depends on how we support the kids who need it most today. We envision a Dallas where zip code doesn’t determine opportunity, and every student has access to the tools, relationships, and experiences that unlock their full potential.</p>
+    </section>
+
+    <section class="team" aria-labelledby="team-heading">
+      <h2 id="team-heading">Meet the Team</h2>
+      <div class="team-grid">
+        <div class="member">
+          <img src="assets/paramjeet.jpg" alt="Portrait of Paramjeet Soni" loading="lazy" decoding="async" width="120" height="120" />
+          <h3>Paramjeet Soni</h3>
+          <p>President & Co-CEO</p>
+        </div>
+        <div class="member">
+          <img src="assets/ekaum.jpg" alt="Portrait of Ekaum Soni" loading="lazy" decoding="async" width="120" height="120" />
+          <h3>Ekaum Soni</h3>
+          <p>Secretary</p>
+        </div>
+        <div class="member">
+          <img src="assets/ravneet.jpg" alt="Portrait of Ravneet Kaur" loading="lazy" decoding="async" width="120" height="120" />
+          <h3>Ravneet Kaur</h3>
+          <p>CTO</p>
+        </div>
+        <div class="member">
+          <img src="assets/arav.jpg" alt="Portrait of Arav Soni" loading="lazy" decoding="async" width="120" height="120" />
+          <h3>Arav Soni</h3>
+          <p>Founder & Co-CEO</p>
+        </div>
+        <div class="member">
+          <img src="assets/manmeet.jpg" alt="Portrait of Manmeet Soni" loading="lazy" decoding="async" width="120" height="120" />
+          <h3>Manmeet Soni</h3>
+          <p>Treasurer</p>
+        </div>
       </div>
-      <div class="member">
-        <img src="assets/ekaum.jpg" alt="Ekaum Soni" />
-        <h3>Ekaum Soni</h3>
-        <p>Secretary</p>
-      </div>
-      <div class="member">
-        <img src="assets/ravneet.jpg" alt="Ravneet Kaur" />
-        <h3>Ravneet Kaur</h3>
-        <p>CTO</p>
-      </div>
-      <div class="member">
-        <img src="assets/arav.jpg" alt="Arav Soni" />
-        <h3>Arav Soni</h3>
-        <p>Founder & Co-CEO</p>
-      </div>
-      <div class="member">
-        <img src="assets/manmeet.jpg" alt="Manmeet Soni" />
-        <h3>Manmeet Soni</h3>
-        <p>Treasurer</p>
-      </div>
-      
-      <!-- <div class="member">
-        <img src="assets/member6.jpg" alt="Member Name" />
-        <h3>Member Name</h3>
-        <p>Role</p>
-      </div>
-      <div class="member">
-        <img src="assets/member7.jpg" alt="Member Name" />
-        <h3>Member Name</h3>
-        <p>Role</p>
-      </div> -->
-    </div>
-  </section>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Soni Family Foundation · Dallas, TX · 501(c)(3) status: pending
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
