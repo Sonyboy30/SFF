@@ -2,20 +2,56 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-F3YEBWJLWB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F3YEBWJLWB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-F3YEBWJLWB');
+  </script>
 
-  gtag('config', 'G-F3YEBWJLWB');
-</script>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Soni Family Foundation</title>
   <meta name="description" content="Soni Family Foundation is unlocking opportunity in Dallas through education, microgrants, and mentorship." />
+  <link rel="canonical" href="https://www.sonifoundation.org/index.html" />
+
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/sff-logo.png" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.sonifoundation.org/index.html" />
+  <meta property="og:site_name" content="Soni Family Foundation" />
+  <meta property="og:title" content="Soni Family Foundation" />
+  <meta property="og:description" content="Unlocking opportunity through education in Dallas." />
+  <meta property="og:image" content="https://www.sonifoundation.org/assets/sff-logo.png" />
+  <meta property="og:image:alt" content="Soni Family Foundation Logo" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Soni Family Foundation" />
+  <meta name="twitter:description" content="Unlocking opportunity through education in Dallas." />
+  <meta name="twitter:image" content="https://www.sonifoundation.org/assets/sff-logo.png" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Soni Family Foundation",
+    "url": "https://www.sonifoundation.org/",
+    "logo": "https://www.sonifoundation.org/assets/sff-logo.png",
+    "sameAs": [
+      "https://www.youtube.com/@SoniFamilyFoundation",
+      "https://www.instagram.com/sonifamilyfoundation",
+      "https://x.com/sonifamfndn",
+      "https://www.linkedin.com/company/soni-family-foundation",
+      "https://linktr.ee/SoniFamilyFoundation"
+    ]
+  }
+  </script>
+
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -24,6 +60,8 @@
       color: #2c1a1d;
       line-height: 1.6;
     }
+    a:focus-visible, button:focus-visible { outline: 2px solid #8c6830; outline-offset: 2px; }
+
     header {
       background: #faf1dd;
       border-bottom: 1px solid #ecd9b0;
@@ -44,7 +82,7 @@
     }
     .nav-logo img {
       height: 60px;
-      width: auto;
+      width: 60px;
       border-radius: 7px;
       box-shadow: 0 2px 8px rgba(140,104,48,0.10);
     }
@@ -68,10 +106,12 @@
       padding-bottom: 2px;
       border-bottom: 2px solid transparent;
     }
-    .nav-right li a:hover {
+    .nav-right li a:hover,
+    .nav-right li a[aria-current="page"] {
       color: #b89b62;
       border-bottom: 2px solid #b89b62;
     }
+
     /* Hero Section */
     .hero {
       min-height: 68vh;
@@ -104,7 +144,27 @@
       line-height: 1.6;
       color: #ffe9bd;
       font-weight: 500;
+      margin-bottom: 1.25rem;
     }
+    .cta-row {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      text-decoration: none;
+      padding: 1rem 1.6rem;
+      background: #8c6830;
+      color: #fff;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1.06rem;
+      transition: background 0.23s, box-shadow 0.23s;
+      box-shadow: 0 2px 10px rgba(180,155,98,0.08);
+    }
+    .btn:hover { background: #b89b62; box-shadow: 0 4px 16px rgba(180,155,98,0.15); }
+
     /* Empowering Geniuses Row */
     .empower-row {
       display: flex;
@@ -122,6 +182,7 @@
     }
     .empower-image img {
       width: 100%;
+      height: auto;
       border-radius: 18px;
       box-shadow: 0 4px 24px rgba(70,50,10,0.13);
       display: block;
@@ -142,22 +203,7 @@
       margin-bottom: 2.2rem;
       color: #433422;
     }
-    .learn-more {
-      text-decoration: none;
-      padding: 1rem 2.2rem;
-      background: #8c6830;
-      color: #fff;
-      border-radius: 6px;
-      font-weight: bold;
-      font-size: 1.13rem;
-      transition: background 0.23s, box-shadow 0.23s;
-      box-shadow: 0 2px 10px rgba(180,155,98,0.08);
-    }
-    .learn-more:hover {
-      background: #b89b62;
-      color: #fff;
-      box-shadow: 0 4px 16px rgba(180,155,98,0.15);
-    }
+
     /* Contact Section Styles */
     .contact-section {
       padding: 3rem 1rem 2rem 1rem;
@@ -249,6 +295,16 @@
       text-decoration: underline;
       color: #603e15;
     }
+
+    footer {
+      border-top: 1px solid #ecd9b0;
+      background: #faf1dd;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #433422;
+    }
+
     @media (max-width: 900px) {
       .main-nav { flex-direction: column; gap: 0.6rem; }
       .empower-row { flex-direction: column; }
@@ -265,31 +321,23 @@
     }
     @media (max-width: 650px) {
       .hero-text { padding: 1.3rem 0.7rem; }
-      .hero-text h1 { font-size: 1.4rem; }
-      .empower-content h2 { font-size: 1.2rem; }
-      .empower-content p, .learn-more, .contact-card, .contact-section h2 { font-size: 1rem; }
+      .hero-text h1 { font-size: 1.6rem; }
+      .empower-content h2 { font-size: 1.3rem; }
+      .empower-content p, .btn, .contact-card, .contact-section h2 { font-size: 1rem; }
     }
   </style>
-  <!-- Place these in your <head> section! -->
-<meta property="og:image" content="https://www.sonifoundation.org/assets/sff-logo.png" />
-<meta property="og:image:alt" content="Soni Family Foundation Logo" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Soni Family Foundation" />
-<meta property="og:description" content="Unlocking opportunity through education in Dallas." />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.sonifoundation.org/assets/sff-logo.png" />
-<meta name="twitter:title" content="Soni Family Foundation" />
-<meta name="twitter:description" content="Unlocking opportunity through education in Dallas." />
 </head>
 <body>
+  <a href="#main" class="sr-only" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+
   <header>
-    <nav class="main-nav">
-      <a href="index.html" class="nav-logo">
-        <img src="assets/sff-logo.png" alt="Soni Family Foundation Logo" />
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html" class="nav-logo" aria-label="Soni Family Foundation home">
+        <img src="assets/sff-logo.png" alt="Soni Family Foundation Logo" width="60" height="60" decoding="async" fetchpriority="high" />
         <span class="nav-brand">Soni Family Foundation</span>
       </a>
       <ul class="nav-right">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" aria-current="page">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="donate.html">Donate</a></li>
@@ -297,55 +345,76 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Welcome to Our Site</h1>
-      <p>Welcome to the Soni Family Foundation. We’re on a mission to unlock opportunity through education. Based in Dallas, SFF partners with schools and nonprofits to deliver microgrants, mentorship, and learning experiences for students who need them most.</p>
-    </div>
-  </section>
-
-  <section class="empower-row">
-    <div class="empower-image">
-      <img src="assets/unlock.jpg" alt="Smiling child" />
-    </div>
-    <div class="empower-content">
-      <h2>Unlocking Brighter Futures</h2>
-      <p>At the Soni Family Foundation, we believe every child has the ability to become a genius. We’re investing in under-resourced schools and nonprofits in South and West Dallas by funding after-school programs, mentorship, and hands-on learning experiences.</p>
-      <a href="projects.html" class="learn-more">Learn More</a>
-    </div>
-  </section>
-
-  <section class="contact-section">
-    <h2>Contact Us</h2>
-    <div class="contact-grid">
-      <div class="contact-socials">
-        <div class="contact-card">
-          <img src="assets/Youtube.png" alt="YouTube Logo" class="contact-logo" />
-          <a href="https://www.youtube.com/@SoniFamilyFoundation" class="contact-link" target="_blank">YouTube</a>
-        </div>
-        <div class="contact-card">
-          <img src="assets/Instagram.png" alt="Instagram Logo" class="contact-logo" />
-          <a href="https://www.instagram.com/sonifamilyfoundation" class="contact-link" target="_blank">Instagram</a>
-        </div>
-        <div class="contact-card">
-          <img src="assets/X.png" alt="X Logo" class="contact-logo" />
-          <a href="https://x.com/sonifamfndn" class="contact-link" target="_blank">X (Twitter)</a>
-        </div>
-        <div class="contact-card">
-          <img src="assets/LinkedIn.png" alt="LinkedIn Logo" class="contact-logo" />
-          <a href="https://www.linkedin.com/company/soni-family-foundation" class="contact-link" target="_blank">LinkedIn</a>
-        </div>
-        <div class="contact-card">
-          <img src="assets/Linktree.png" alt="Linktree Logo" class="contact-logo" />
-          <a href="https://linktr.ee/SoniFamilyFoundation" class="contact-link" target="_blank">Linktree</a>
+  <main id="main">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Unlocking Opportunity Through Education</h1>
+        <p>Based in Dallas, we partner with schools and nonprofits to deliver microgrants, mentorship, and hands-on learning for students who need it most.</p>
+        <div class="cta-row">
+          <a class="btn" href="donate.html">Donate</a>
+          <a class="btn" href="projects.html">Learn More</a>
         </div>
       </div>
-      <div class="contact-info-card">
-        <div class="info-row"><span class="info-label">Phone:</span> 857-361-9601</div>
-        <div class="info-row"><span class="info-label">Email:</span> <a href="mailto:sonifamilyfoundation@gmail.com">SoniFamilyFoundation@gmail.com</a></div>
+    </section>
+
+    <section class="empower-row">
+      <div class="empower-image">
+        <img src="assets/unlock.jpg" alt="Student engaged in an after-school learning activity" loading="lazy" decoding="async">
+      </div>
+      <div class="empower-content">
+        <h2>Unlocking Brighter Futures</h2>
+        <p>We believe every child has the ability to become a genius. We’re investing in under-resourced schools and nonprofits in South and West Dallas by funding after-school programs, mentorship, and hands-on learning experiences.</p>
+        <a href="projects.html" class="btn">Explore Projects</a>
+      </div>
+    </section>
+
+    <section class="contact-section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Us</h2>
+      <div class="contact-grid">
+        <div class="contact-socials">
+          <div class="contact-card">
+            <img src="assets/Youtube.png" alt="" class="contact-logo" width="27" height="27" loading="lazy" decoding="async" />
+            <a href="https://www.youtube.com/@SoniFamilyFoundation" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="SFF on YouTube">YouTube</a>
+          </div>
+          <div class="contact-card">
+            <img src="assets/Instagram.png" alt="" class="contact-logo" width="27" height="27" loading="lazy" decoding="async" />
+            <a href="https://www.instagram.com/sonifamilyfoundation" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="SFF on Instagram">Instagram</a>
+          </div>
+          <div class="contact-card">
+            <img src="assets/X.png" alt="" class="contact-logo" width="27" height="27" loading="lazy" decoding="async" />
+            <a href="https://x.com/sonifamfndn" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="SFF on X (formerly Twitter)">X (Twitter)</a>
+          </div>
+          <div class="contact-card">
+            <img src="assets/LinkedIn.png" alt="" class="contact-logo" width="27" height="27" loading="lazy" decoding="async" />
+            <a href="https://www.linkedin.com/company/soni-family-foundation" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="SFF on LinkedIn">LinkedIn</a>
+          </div>
+          <div class="contact-card">
+            <img src="assets/Linktree.png" alt="" class="contact-logo" width="27" height="27" loading="lazy" decoding="async" />
+            <a href="https://linktr.ee/SoniFamilyFoundation" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="SFF on Linktree">Linktree</a>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="info-row">
+            <span class="info-label">Phone:</span>
+            <a href="tel:+18573619601">+1 (857) 361-9601</a>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Email:</span>
+            <a href="mailto:sonifamilyfoundation@gmail.com">sonifamilyfoundation@gmail.com</a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Soni Family Foundation · Dallas, TX · 501(c)(3) status: pending
+  </footer>
+
+  <script>
+    // Update footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
