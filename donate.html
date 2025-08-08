@@ -2,154 +2,128 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-  <link rel="preconnect" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F3YEBWJLWB"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-F3YEBWJLWB');
-  </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F3YEBWJLWB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-F3YEBWJLWB');
+</script>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Donate | Soni Family Foundation</title>
-  <meta name="description" content="Support the Soni Family Foundation. Your gift funds microgrants, mentorship, and student programs in Dallas." />
-  <link rel="canonical" href="https://www.sonifoundation.org/donate.html" />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/sff-logo.png" />
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.sonifoundation.org/donate.html" />
-  <meta property="og:site_name" content="Soni Family Foundation" />
-  <meta property="og:title" content="Donate | Soni Family Foundation" />
-  <meta property="og:description" content="Help fund microgrants, mentorship, and hands-on learning for Dallas students." />
-  <meta property="og:image" content="https://www.sonifoundation.org/assets/sff-logo.png" />
-  <meta property="og:image:alt" content="Soni Family Foundation Logo" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Donate | Soni Family Foundation" />
-  <meta name="twitter:description" content="Help fund microgrants, mentorship, and hands-on learning for Dallas students." />
-  <meta name="twitter:image" content="https://www.sonifoundation.org/assets/sff-logo.png" />
-
-  <!-- Structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Soni Family Foundation",
-    "url": "https://www.sonifoundation.org/",
-    "logo": "https://www.sonifoundation.org/assets/sff-logo.png"
-  }
-  </script>
-
+  <meta name="description" content="Support the Soni Family Foundation with your donation." />
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Georgia', serif; background: #faf6ef; color: #2c1a1d; line-height: 1.6; }
-    a:focus-visible, button:focus-visible { outline: 2px solid #8c6830; outline-offset: 2px; }
-
+    body { font-family: 'Georgia', serif; background: #faf6ef; color: #2c1a1d; }
     header { background: #faf1dd; border-bottom: 1px solid #ecd9b0; }
     .main-nav { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 1.5rem 2rem; }
-    .nav-logo { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
-    .nav-logo img { height: 60px; width: 60px; border-radius: 7px; box-shadow: 0 2px 8px rgba(140,104,48,0.10); }
-    .nav-brand { font-size: 1.25rem; font-weight: bold; color: #603e15; letter-spacing: 1px; }
+    .nav-brand { font-size: 1.3rem; font-weight: bold; color: #603e15; }
     .nav-right { list-style: none; display: flex; gap: 2.2rem; }
     .nav-right li a { text-decoration: none; color: #2c1a1d; font-weight: bold; font-size: 1.15rem; transition: color 0.2s; padding-bottom: 2px; border-bottom: 2px solid transparent; }
-    .nav-right li a:hover, .nav-right li a[aria-current="page"] { color: #b89b62; border-bottom: 2px solid #b89b62; }
+    .nav-right li a:hover { color: #b89b62; border-bottom: 2px solid #b89b62; }
 
-    .donate-section { max-width: 640px; margin: 3.5rem auto 2rem; background: #fff9ef; border-radius: 20px; box-shadow: 0 8px 30px rgba(180,155,98,0.09); padding: 2.4rem 2rem; text-align: center; }
-    .donate-section h1 { font-size: 2rem; color: #855515; margin-bottom: 1rem; }
-    .donate-section p { font-size: 1.12rem; margin-bottom: 1.2rem; color: #3d2e1b; }
+    .donate-section { max-width: 600px; margin: 5rem auto 4rem auto; background: #fff9ef; border-radius: 20px; box-shadow: 0 8px 30px rgba(180,155,98,0.09); padding: 3rem 2.2rem 2.3rem 2.2rem; text-align: center; }
+    .donate-section h1 { font-size: 2.3rem; color: #855515; margin-bottom: 1.2rem; }
+    .donate-section p { font-size: 1.18rem; margin-bottom: 2.4rem; color: #3d2e1b; }
+    .donate-section .button {
+      background: #47bb65; color: #fff; border: none; border-radius: 8px; font-size: 1.17rem;
+      padding: 1rem 2.4rem; font-weight: bold; cursor: pointer; text-decoration: none; transition: background 0.23s;
+      box-shadow: 0 2px 10px rgba(71,187,101,0.14);
+      display: inline-block;
+      margin-bottom: 2.2rem;
+    }
+    .donate-section .button:hover { background: #268944; color: #fff; }
 
-    .btn { text-decoration: none; display: inline-block; padding: 1rem 2rem; border-radius: 10px; font-weight: 700; font-size: 1.1rem; transition: background 0.23s, box-shadow 0.23s; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
-    .btn-primary { background: #47bb65; color: #fff; }
-    .btn-primary:hover { background: #268944; box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
-    .btn-secondary { background: #8c6830; color: #fff; margin-left: 0.5rem; }
-    .btn-secondary:hover { background: #b89b62; box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
-
-    .note { font-size: 0.95rem; color: #604d31; margin-top: 0.9rem; }
-    .divider { max-width: 640px; margin: 2rem auto; border-top: 1px solid #ecd9b0; }
-
-    .impact-section { margin: 2rem auto 3rem; text-align: center; max-width: 1000px; padding: 0 1rem; }
-    .impact-section h2 { font-size: 1.6rem; color: #8c6830; margin-bottom: 1.2rem; font-weight: 700; }
-    .impact-grid { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; align-items: stretch; }
-    .impact-card { background: #f6f0e3; border-radius: 14px; padding: 1.2rem 1rem; min-width: 240px; max-width: 320px; box-shadow: 0 2px 12px rgba(180,155,98,0.12); }
-    .impact-card h3 { font-size: 1.15rem; color: #895721; margin-bottom: 0.4rem; font-weight: 600; }
-    .impact-card p { font-size: 1.02rem; color: #433422; }
-
-    footer { border-top: 1px solid #ecd9b0; background: #faf1dd; padding: 1rem 2rem; text-align: center; font-size: 0.95rem; color: #433422; }
-
+    .impact-section {
+      margin-top: 3rem;
+      text-align: center;
+    }
+    .impact-section h2 {
+      font-size: 2rem;
+      color: #8c6830;
+      margin-bottom: 2.2rem;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+    }
+    .impact-grid {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+    }
+    .impact-grid > div {
+      background: #f6f0e3;
+      border-radius: 14px;
+      padding: 2rem 1.5rem;
+      min-width: 240px;
+      max-width: 320px;
+      box-shadow: 0 2px 12px rgba(180,155,98,0.12);
+      margin-bottom: 1.2rem;
+    }
+    .impact-grid h3 {
+      font-size: 1.25rem;
+      color: #895721;
+      margin-bottom: 0.6rem;
+      font-weight: 600;
+    }
+    .impact-grid p {
+      font-size: 1.12rem;
+      color: #433422;
+    }
     @media (max-width: 900px) {
+      .impact-grid { flex-direction: column; gap: 1.3rem; }
+      .impact-grid > div { margin: 0 auto; max-width: 96vw; }
+    }
+    @media (max-width: 700px) {
       .main-nav { flex-direction: column; gap: 0.6rem; }
-      .btn-secondary { display: block; margin: 0.75rem auto 0; }
+      .donate-section { padding: 2rem 0.7rem; }
+      .impact-section h2 { font-size: 1.3rem; }
+      .donate-section h1 { font-size: 1.3rem; }
+      .donate-section p, .impact-grid h3, .impact-grid p { font-size: 1rem; }
     }
   </style>
 </head>
 <body>
-  <a href="#main" class="sr-only" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
-
   <header>
-    <nav class="main-nav" aria-label="Primary">
-      <a href="index.html" class="nav-logo" aria-label="Soni Family Foundation home">
-        <img src="assets/sff-logo.png" alt="Soni Family Foundation Logo" width="60" height="60" decoding="async" fetchpriority="high" />
-        <span class="nav-brand">Soni Family Foundation</span>
-      </a>
+    <nav class="main-nav">
+      <span class="nav-brand">Soni Family Foundation</span>
       <ul class="nav-right">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="donate.html" aria-current="page">Donate</a></li>
+        <li><a href="donate.html">Donate</a></li>
       </ul>
     </nav>
   </header>
+  <section class="donate-section">
+    <h1>Support SFF</h1>
+    <p>
+      Every donation helps us provide microgrants, mentorship, and resources to students and schools in Dallas.<br>
+      Your gift has a direct, positive impact on our community.<br><br>
+      All donations will be tax-deductible once our 501(c)(3) approval is finalized.<br>
+      For donation questions: <a href="mailto:sonifamilyfoundation@gmail.com">sonifamilyfoundation@gmail.com</a>
+    </p>
+    <a href="https://www.gofundme.com/f/open-doors-for-dallas-students/cl/o?utm_campaign=man_sharesheet_dash&utm_content=amp13_c&utm_medium=customer&utm_source=copy_link&lang=en_US&attribution_id=sl%3Ac9cc9404-bab6-4f84-b8f3-f44bf4ea1aa4&ts=1754086694" class="button" target="_blank">Donate on GoFundMe</a>
+  </section>
 
-  <main id="main">
-    <section class="donate-section" aria-labelledby="donate-heading">
-      <h1 id="donate-heading">Support SFF</h1>
-      <p>Every donation helps us provide microgrants, mentorship, and hands-on learning for Dallas students and schools.</p>
-      <p><strong>501(c)(3) status:</strong> pending. Donations may be tax-deductible once determination is finalized and effective—please consult your tax advisor.</p>
-
-      <p class="note">Questions? <a href="mailto:sonifamilyfoundation@gmail.com">sonifamilyfoundation@gmail.com</a></p>
-
-      <div style="margin-top:1.2rem;">
-        <a class="btn btn-primary" href="https://www.gofundme.com/f/open-doors-for-dallas-students/cl/o?utm_campaign=man_sharesheet_dash&utm_content=amp13_c&utm_medium=customer&utm_source=copy_link&lang=en_US&attribution_id=sl%3Ac9cc9404-bab6-4f84-b8f3-f44bf4ea1aa4&ts=1754086694"
-           target="_blank" rel="noopener noreferrer">Donate on GoFundMe</a>
-        <a class="btn btn-secondary" href="mailto:sonifamilyfoundation@gmail.com?subject=Employer%20Match%20or%20Stock%20Gift"
-           aria-label="Email us about employer matching or stock gifts">Employer match / stock gifts</a>
+  <section class="impact-section">
+    <h2>What Your Support Makes Possible</h2>
+    <div class="impact-grid">
+      <div>
+        <h3>Microgrants for Schools</h3>
+        <p>Help Title I campuses start after-school clubs, tutoring, or summer prep.</p>
       </div>
-
-      <p class="note">Prefer to give by check? Email us for mailing instructions.</p>
-    </section>
-
-    <div class="divider" role="presentation"></div>
-
-    <section class="impact-section" aria-labelledby="impact-heading">
-      <h2 id="impact-heading">What Your Support Makes Possible</h2>
-      <div class="impact-grid">
-        <div class="impact-card">
-          <h3>$50 — Classroom supplies</h3>
-          <p>Fund books, lab materials, or art kits for a Title I classroom.</p>
-        </div>
-        <div class="impact-card">
-          <h3>$250 — After-school session</h3>
-          <p>Cover a week of small-group tutoring or a club stipend.</p>
-        </div>
-        <div class="impact-card">
-          <h3>$1,000 — Pilot a program</h3>
-          <p>Seed a mentorship or wellness pilot with a partner campus.</p>
-        </div>
+      <div>
+        <h3>Student-Centered Programs</h3>
+        <p>From robotics to reading, we support programs that make learning exciting.</p>
       </div>
-    </section>
-  </main>
-
-  <footer>
-    © <span id="year"></span> Soni Family Foundation · Dallas, TX · 501(c)(3) status: pending
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+      <div>
+        <h3>Community Partnerships</h3>
+        <p>We plan to collaborate with nonprofits doing vital work in education equity.</p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
