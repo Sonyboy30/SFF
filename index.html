@@ -15,7 +15,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Soni Family Foundation</title>
-  <meta name="description" content="Soni Family Foundation is unlocking opportunity in Dallas through education, microgrants, and mentorship." />
+  <meta name="description" content="Soni Family Foundation is a registered 501(c)(3) nonprofit unlocking opportunity in Dallas through education, microgrants, and mentorship. EIN: YOUR-EIN-HERE." />
   <link rel="canonical" href="https://www.sonifoundation.org/index.html" />
 
   <!-- Favicon -->
@@ -26,22 +26,24 @@
   <meta property="og:url" content="https://www.sonifoundation.org/index.html" />
   <meta property="og:site_name" content="Soni Family Foundation" />
   <meta property="og:title" content="Soni Family Foundation" />
-  <meta property="og:description" content="Unlocking opportunity through education in Dallas." />
+  <meta property="og:description" content="SFF is a registered 501(c)(3) nonprofit unlocking opportunity through education in Dallas. EIN: YOUR-EIN-HERE." />
   <meta property="og:image" content="https://www.sonifoundation.org/assets/sff-logo.png" />
   <meta property="og:image:alt" content="Soni Family Foundation Logo" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Soni Family Foundation" />
-  <meta name="twitter:description" content="Unlocking opportunity through education in Dallas." />
+  <meta name="twitter:description" content="SFF is a registered 501(c)(3) nonprofit unlocking opportunity through education in Dallas. EIN: YOUR-EIN-HERE." />
   <meta name="twitter:image" content="https://www.sonifoundation.org/assets/sff-logo.png" />
 
   <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "NonprofitOrganization",
     "name": "Soni Family Foundation",
     "url": "https://www.sonifoundation.org/",
     "logo": "https://www.sonifoundation.org/assets/sff-logo.png",
+    "taxID": "33-3328044",
+    "nonprofitStatus": "https://schema.org/Nonprofit501c3",
     "sameAs": [
       "https://www.youtube.com/@SoniFamilyFoundation",
       "https://www.instagram.com/sonifamilyfoundation",
@@ -54,256 +56,52 @@
 
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: 'Georgia', serif;
-      background: #faf6ef;
-      color: #2c1a1d;
-      line-height: 1.6;
-    }
+    body { font-family: 'Georgia', serif; background: #faf6ef; color: #2c1a1d; line-height: 1.6; }
     a:focus-visible, button:focus-visible { outline: 2px solid #8c6830; outline-offset: 2px; }
 
-    header {
-      background: #faf1dd;
-      border-bottom: 1px solid #ecd9b0;
-    }
-    .main-nav {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1.5rem 2rem;
-    }
-    .nav-logo {
-      display: flex;
-      align-items: center;
-      gap: 0.7rem;
-      text-decoration: none;
-    }
-    .nav-logo img {
-      height: 60px;
-      width: 60px;
-      border-radius: 7px;
-      box-shadow: 0 2px 8px rgba(140,104,48,0.10);
-    }
-    .nav-brand {
-      color: #603e15;
-      font-size: 1.25rem;
-      font-weight: bold;
-      letter-spacing: 1px;
-    }
-    .nav-right {
-      list-style: none;
-      display: flex;
-      gap: 2.2rem;
-    }
-    .nav-right li a {
-      text-decoration: none;
-      color: #2c1a1d;
-      font-weight: bold;
-      font-size: 1.15rem;
-      transition: color 0.2s;
-      padding-bottom: 2px;
-      border-bottom: 2px solid transparent;
-    }
-    .nav-right li a:hover,
-    .nav-right li a[aria-current="page"] {
-      color: #b89b62;
-      border-bottom: 2px solid #b89b62;
-    }
+    header { background: #faf1dd; border-bottom: 1px solid #ecd9b0; }
+    .main-nav { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 1.5rem 2rem; }
+    .nav-logo { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
+    .nav-logo img { height: 60px; width: 60px; border-radius: 7px; box-shadow: 0 2px 8px rgba(140,104,48,0.10); }
+    .nav-brand { color: #603e15; font-size: 1.25rem; font-weight: bold; letter-spacing: 1px; }
+    .nav-right { list-style: none; display: flex; gap: 2.2rem; }
+    .nav-right li a { text-decoration: none; color: #2c1a1d; font-weight: bold; font-size: 1.15rem; transition: color 0.2s; padding-bottom: 2px; border-bottom: 2px solid transparent; }
+    .nav-right li a:hover, .nav-right li a[aria-current="page"] { color: #b89b62; border-bottom: 2px solid #b89b62; }
 
     /* Hero Section */
-    .hero {
-      min-height: 68vh;
-      background: url('assets/welcome.jpg') center center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-    }
-    .hero-text {
-      background: rgba(0,0,0,0.47);
-      color: #fff;
-      border-radius: 18px;
-      padding: 2.7rem 2rem;
-      max-width: 700px;
-      margin: 3.5rem 2rem 3rem 2rem;
-      box-shadow: 0 8px 32px rgba(70,50,10,0.07);
-      text-align: center;
-      position: relative;
-    }
-    .hero-text h1 {
-      font-size: 2.7rem;
-      letter-spacing: 1.2px;
-      margin-bottom: 1.1rem;
-      font-weight: bold;
-      line-height: 1.18;
-    }
-    .hero-text p {
-      font-size: 1.23rem;
-      line-height: 1.6;
-      color: #ffe9bd;
-      font-weight: 500;
-      margin-bottom: 1.25rem;
-    }
-    .cta-row {
-      display: flex;
-      gap: 0.75rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .btn {
-      text-decoration: none;
-      padding: 1rem 1.6rem;
-      background: #8c6830;
-      color: #fff;
-      border-radius: 6px;
-      font-weight: bold;
-      font-size: 1.06rem;
-      transition: background 0.23s, box-shadow 0.23s;
-      box-shadow: 0 2px 10px rgba(180,155,98,0.08);
-    }
+    .hero { min-height: 68vh; background: url('assets/welcome.jpg') center center/cover no-repeat; display: flex; align-items: center; justify-content: center; position: relative; }
+    .hero-text { background: rgba(0,0,0,0.47); color: #fff; border-radius: 18px; padding: 2.7rem 2rem; max-width: 700px; margin: 3.5rem 2rem 3rem 2rem; box-shadow: 0 8px 32px rgba(70,50,10,0.07); text-align: center; position: relative; }
+    .hero-text h1 { font-size: 2.7rem; letter-spacing: 1.2px; margin-bottom: 1.1rem; font-weight: bold; line-height: 1.18; }
+    .hero-text p { font-size: 1.23rem; line-height: 1.6; color: #ffe9bd; font-weight: 500; margin-bottom: 1.25rem; }
+    .cta-row { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+    .btn { text-decoration: none; padding: 1rem 1.6rem; background: #8c6830; color: #fff; border-radius: 6px; font-weight: bold; font-size: 1.06rem; transition: background 0.23s, box-shadow 0.23s; box-shadow: 0 2px 10px rgba(180,155,98,0.08); }
     .btn:hover { background: #b89b62; box-shadow: 0 4px 16px rgba(180,155,98,0.15); }
 
     /* Empowering Geniuses Row */
-    .empower-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2.5rem;
-      padding: 5rem 2rem 4rem 2rem;
-      align-items: center;
-      justify-content: center;
-      background: #fff9ef;
-    }
-    .empower-image {
-      flex: 1;
-      max-width: 340px;
-      min-width: 220px;
-    }
-    .empower-image img {
-      width: 100%;
-      height: auto;
-      border-radius: 18px;
-      box-shadow: 0 4px 24px rgba(70,50,10,0.13);
-      display: block;
-    }
-    .empower-content {
-      flex: 1.2;
-      min-width: 250px;
-      max-width: 600px;
-    }
-    .empower-content h2 {
-      font-size: 2.4rem;
-      margin-bottom: 1.1rem;
-      color: #8c6830;
-      letter-spacing: 0.5px;
-    }
-    .empower-content p {
-      font-size: 1.22rem;
-      margin-bottom: 2.2rem;
-      color: #433422;
-    }
+    .empower-row { display: flex; flex-wrap: wrap; gap: 2.5rem; padding: 5rem 2rem 4rem 2rem; align-items: center; justify-content: center; background: #fff9ef; }
+    .empower-image { flex: 1; max-width: 340px; min-width: 220px; }
+    .empower-image img { width: 100%; height: auto; border-radius: 18px; box-shadow: 0 4px 24px rgba(70,50,10,0.13); display: block; }
+    .empower-content { flex: 1.2; min-width: 250px; max-width: 600px; }
+    .empower-content h2 { font-size: 2.4rem; margin-bottom: 1.1rem; color: #8c6830; letter-spacing: 0.5px; }
+    .empower-content p { font-size: 1.22rem; margin-bottom: 2.2rem; color: #433422; }
 
-    /* Contact Section Styles */
-    .contact-section {
-      padding: 3rem 1rem 2rem 1rem;
-      background: #faf6ef;
-      border-top: 1px solid #f2e7ce;
-    }
-    .contact-section h2 {
-      font-size: 1.7rem;
-      color: #8c6830;
-      margin-bottom: 1.5rem;
-      letter-spacing: 0.5px;
-      font-weight: 700;
-      text-align: center;
-    }
-    .contact-grid {
-      display: flex;
-      gap: 2rem;
-      justify-content: center;
-      align-items: flex-start;
-      max-width: 900px;
-      margin: 0 auto;
-      flex-wrap: wrap;
-    }
-    .contact-socials {
-      display: flex;
-      flex-direction: column;
-      gap: 0.65rem;
-      min-width: 180px;
-      align-items: flex-start;
-    }
-    .contact-card {
-      background: #fff9ef;
-      border-radius: 10px;
-      box-shadow: 0 1px 7px rgba(180,155,98,0.09);
-      padding: 0.7rem 1.1rem;
-      display: flex;
-      align-items: center;
-      gap: 0.9rem;
-      font-size: 1rem;
-      transition: box-shadow 0.18s, background 0.18s;
-    }
-    .contact-card:hover {
-      background: #fbe0b2;
-      box-shadow: 0 6px 20px rgba(180,155,98,0.14);
-    }
-    .contact-logo {
-      width: 27px;
-      height: 27px;
-      margin-right: 0.15rem;
-      vertical-align: middle;
-      display: inline-block;
-    }
-    .contact-link {
-      color: #8c4c8a;
-      font-weight: 600;
-      text-decoration: none;
-      transition: color 0.18s;
-    }
-    .contact-link:hover {
-      color: #603e15;
-      text-decoration: underline;
-    }
-    .contact-info-card {
-      background: #fff9ef;
-      border-radius: 10px;
-      box-shadow: 0 1px 7px rgba(180,155,98,0.09);
-      padding: 1.3rem 1.2rem;
-      font-size: 1rem;
-      min-width: 200px;
-      max-width: 250px;
-      margin-top: 0.5rem;
-    }
-    .info-row {
-      margin-bottom: 1rem;
-      display: flex;
-      flex-direction: column;
-      word-break: break-word;
-    }
-    .info-label {
-      color: #8c6830;
-      font-weight: 700;
-      margin-bottom: 0.08rem;
-    }
-    .contact-info-card a {
-      color: #8c4c8a;
-      text-decoration: none;
-    }
-    .contact-info-card a:hover {
-      text-decoration: underline;
-      color: #603e15;
-    }
+    /* Contact Section */
+    .contact-section { padding: 3rem 1rem 2rem 1rem; background: #faf6ef; border-top: 1px solid #f2e7ce; }
+    .contact-section h2 { font-size: 1.7rem; color: #8c6830; margin-bottom: 1.5rem; letter-spacing: 0.5px; font-weight: 700; text-align: center; }
+    .contact-grid { display: flex; gap: 2rem; justify-content: center; align-items: flex-start; max-width: 900px; margin: 0 auto; flex-wrap: wrap; }
+    .contact-socials { display: flex; flex-direction: column; gap: 0.65rem; min-width: 180px; align-items: flex-start; }
+    .contact-card { background: #fff9ef; border-radius: 10px; box-shadow: 0 1px 7px rgba(180,155,98,0.09); padding: 0.7rem 1.1rem; display: flex; align-items: center; gap: 0.9rem; font-size: 1rem; transition: box-shadow 0.18s, background 0.18s; }
+    .contact-card:hover { background: #fbe0b2; box-shadow: 0 6px 20px rgba(180,155,98,0.14); }
+    .contact-logo { width: 27px; height: 27px; margin-right: 0.15rem; vertical-align: middle; display: inline-block; }
+    .contact-link { color: #8c4c8a; font-weight: 600; text-decoration: none; transition: color 0.18s; }
+    .contact-link:hover { color: #603e15; text-decoration: underline; }
+    .contact-info-card { background: #fff9ef; border-radius: 10px; box-shadow: 0 1px 7px rgba(180,155,98,0.09); padding: 1.3rem 1.2rem; font-size: 1rem; min-width: 200px; max-width: 250px; margin-top: 0.5rem; }
+    .info-row { margin-bottom: 1rem; display: flex; flex-direction: column; word-break: break-word; }
+    .info-label { color: #8c6830; font-weight: 700; margin-bottom: 0.08rem; }
+    .contact-info-card a { color: #8c4c8a; text-decoration: none; }
+    .contact-info-card a:hover { text-decoration: underline; color: #603e15; }
 
-    footer {
-      border-top: 1px solid #ecd9b0;
-      background: #faf1dd;
-      padding: 1rem 2rem;
-      text-align: center;
-      font-size: 0.95rem;
-      color: #433422;
-    }
+    footer { border-top: 1px solid #ecd9b0; background: #faf1dd; padding: 1rem 2rem; text-align: center; font-size: 0.95rem; color: #433422; }
 
     @media (max-width: 900px) {
       .main-nav { flex-direction: column; gap: 0.6rem; }
@@ -311,11 +109,7 @@
       .empower-image, .empower-content { max-width: 90vw; }
     }
     @media (max-width: 700px) {
-      .contact-grid {
-        flex-direction: column;
-        gap: 1.1rem;
-        align-items: center;
-      }
+      .contact-grid { flex-direction: column; gap: 1.1rem; align-items: center; }
       .contact-info-card { max-width: 90vw; }
       .contact-socials { align-items: center; }
     }
@@ -408,11 +202,12 @@
   </main>
 
   <footer>
-    © <span id="year"></span> Soni Family Foundation · Dallas, TX · 501(c)(3) status: pending
+    © <span id="year"></span> Soni Family Foundation · Dallas, TX ·
+    Registered 501(c)(3) nonprofit · EIN: <strong>33-3328044</strong> ·
+    Contributions are tax-deductible to the extent permitted by law.
   </footer>
 
   <script>
-    // Update footer year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
