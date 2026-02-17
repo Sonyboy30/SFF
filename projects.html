@@ -132,18 +132,18 @@
       <img src="assets/projects-hero.jpg" alt="Students collaborating during an after-school session" loading="lazy" decoding="async" width="900" height="540" />
     </section>
 
-    <!-- IMPACT STRIP (fill in numbers when ready) -->
+    <!-- IMPACT STRIP (UPDATED) -->
     <section class="impact-strip" aria-label="Impact metrics">
       <div class="impact-card">
-        <div class="num" id="students-served">—</div>
-        <div class="label">Students Supported</div>
+        <div class="num">500</div>
+        <div class="label">Lives Impacted</div>
       </div>
       <div class="impact-card">
-        <div class="num" id="grants-given">—</div>
+        <div class="num">5</div>
         <div class="label">Microgrants Awarded</div>
       </div>
       <div class="impact-card">
-        <div class="num" id="partners">—</div>
+        <div class="num">1</div>
         <div class="label">School & Nonprofit Partners</div>
       </div>
     </section>
@@ -188,12 +188,6 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // (Optional) Fill these when you have real numbers:
-    const metrics = { students: null, grants: null, partners: null };
-    if (metrics.students) document.getElementById('students-served').textContent = metrics.students.toLocaleString();
-    if (metrics.grants) document.getElementById('grants-given').textContent = metrics.grants.toLocaleString();
-    if (metrics.partners) document.getElementById('partners').textContent = metrics.partners.toLocaleString();
   </script>
 </body>
 </html>
